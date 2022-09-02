@@ -1,0 +1,16 @@
+/** brand */
+.app__brand{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/** media-querie */
+/** for mobile */
+@media screen and (max-width:450px) {
+    .app__brand{
+        padding: 1rem;
+    }
+}

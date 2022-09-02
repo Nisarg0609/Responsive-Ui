@@ -1,0 +1,753 @@
+/** for all, body, links, lists */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--color-bg);
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+
+/** section padding */
+.section__padding{
+    padding: 4rem 6rem;
+}
+
+
+
+/** plaintext */
+.p-large{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+}
+.p-medium{
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: var(--font-family);
+}
+.p-small{
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: var(--font-family);
+}
+
+
+
+
+/** headtext */
+.headtext-large{
+  font-size: 62px;
+  line-height: 75px;
+  font-weight: 800;
+  font-family: var(--font-family);
+}
+.headtext-medium{
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+}
+.headtext-small{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: var(--font-family);
+}
+.headtext-e_small{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  font-family: var(--font-family);
+}
+
+
+
+
+/** gradient text */
+.gradient-text{
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.app__bg{
+    background: var(--color-bg);
+}
+
+
+/** gradient bg */
+.gradient__bg {
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+
+
+
+/** animation */
+.scale-up-tr {
+	-webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+  
+
+
+
+/** media queries */
+/** for large screen */
+@media screen and (min-width:2500px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 98px;
+        line-height: 130px;
+    }
+    .headtext-medium{
+        font-size: 54px;
+        line-height: 80px;
+    }
+    .headtext-e_small{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .p-medium{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .p-small{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
+    /** section padding */
+    .section__padding{
+        padding: 6rem;
+    }
+    
+    /** section margin */
+    .section__margin{
+        margin: 6rem;
+    }
+
+    /** navbar */
+    .app__navbar-logo{
+        width: 92px;
+        height: 40px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 0rem 6rem;
+    }
+    .brand-logo img{
+        width: 210px;
+    }  
+}
+@media screen and (max-width:2500px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 92px;
+        line-height: 120px;
+    }
+    .headtext-medium{
+        font-size: 54px;
+        line-height: 75px;
+    }
+    .headtext-e_small{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .p-medium{
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .p-small{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 6rem;
+    }
+    
+    /** section margin */
+    .section__margin{
+        margin: 6rem;
+    }
+
+    /** navbar */
+    .app__navbar-logo{
+        width: 92px;
+        height: 40px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 0rem 5rem;
+    }
+    .brand-logo img{
+        width: 200px;
+    }  
+}
+@media screen and (max-width:2250px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 85px;
+        line-height: 110px;
+    }
+    .headtext-medium{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .headtext-e_small{
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .p-medium{
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .p-small{
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 6rem;
+    }
+    
+    /** section margin */
+    .section__margin{
+        margin: 6rem;
+    }
+    
+    /** navbar */
+    .app__navbar-logo{
+        width: 92px;
+        height: 40px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 0rem 5rem;
+    }
+    .brand-logo img{
+        width: 180px;
+    }  
+}
+@media screen and (max-width:1950px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 80px;
+        line-height: 110px;
+    }
+    .headtext-medium{
+        font-size: 46px;
+        line-height: 60px;
+    }
+    .headtext-e_small{
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .p-medium{
+        font-size: 22px;
+        line-height: 35px;
+    }    
+    .p-small{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 6rem;
+    }
+}
+
+
+
+
+/** for laptop */
+@media screen and (max-width:1700px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 62px;
+        line-height: 75px;
+    }
+    .headtext-medium{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .headtext-e_small{
+        font-size: 22px;
+        line-height: 33px;
+    }
+      
+
+    /** plaintext */
+    .p-large{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .p-medium{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 16px;
+        line-height: 27px;
+    }
+      
+
+    /** section padding */
+    .section__padding{
+        padding: 4rem ;
+    }
+
+    /** section margin */
+    .section__margin{
+        margin: 4rem;
+    }
+
+    /** navbar */
+    .app__navbar-logo{
+        width: 62.56px;
+        height: 16.02px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 2rem 4rem;
+    }
+    .brand-logo img{
+        width: 140px;
+    }  
+}
+@media screen and (max-width:1450px) {
+    
+    /** headtext */
+    .headtext-large{
+        font-size: 62px;
+        line-height: 75px;
+    }
+    .headtext-medium{
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .headtext-e_small{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    /** plaintext */
+    .p-large{
+        font-size: 21px;
+        line-height: 35px;
+    }
+    .p-medium{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 4rem;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 2rem 3rem;
+    }
+    .brand-logo img{
+        width: 130px;
+    } 
+}
+@media screen and (max-width:1300px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 62px;
+        line-height: 75px;
+    }
+    .headtext-medium{
+        font-size: 33px;
+        line-height: 45px;
+    }
+    .headtext-e_small{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 21px;
+        line-height: 35px;
+    }
+    .p-medium{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 3rem;
+    }
+}
+
+
+
+
+/** for tablet */
+@media screen and (max-width:1150px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 62px;
+        line-height: 75px;
+    }
+    .headtext-medium{
+        font-size: 30px;
+        line-height: 43px;
+    }
+    .headtext-e_small{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .p-medium{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 2.5rem;
+    }
+
+    /** section margin */
+    .section__margin{
+        margin: 2rem 2rem;
+    }
+
+    /** navbar */
+    .app__navbar-logo{
+        width: 72px;
+        height: 22px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 2rem 3rem;
+    }
+    .brand-logo img{
+        width: 110px;
+    } 
+}
+@media screen and (max-width:850px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 62px;
+        line-height: 75px;
+    }
+    .headtext-medium{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .headtext-e_small{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .p-medium{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 2rem 2rem;
+    }
+}
+@media screen and (max-width:700px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 54px;
+        line-height:70px;
+    }   
+    .headtext-medium{
+        font-size: 25px;
+        line-height: 38px;
+    }
+    .headtext-e_small{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .p-medium{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 1.5rem 2rem;
+    }
+    .brand-logo img{
+        width: 95px;
+    } 
+}
+
+
+
+
+/** for mobile */
+@media screen and (max-width:450px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 44px;
+        line-height:60px;
+    }   
+    .headtext-medium{
+        font-size: 23px;
+        line-height: 34px;
+    }
+    .headtext-e_small{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .p-medium{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .p-small{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 2rem;
+    }
+
+    /** section margin */
+    .section__margin{
+        margin: 3rem 1.5rem;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 1.5rem 2rem;
+    }
+    .brand-logo img{
+        width: 95px;
+    } 
+}
+@media screen and (max-width:360px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 40px;
+        line-height:55px;
+    }   
+    .headtext-medium{
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .headtext-e_small{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    /** plaintext */
+    .p-large{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 1.5rem ;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 1.5rem 1.5rem;
+    }
+    .brand-logo img{
+        width: 90px;
+    } 
+
+    
+}
+@media screen and (max-width:270px) {
+
+    /** headtext */
+    .headtext-large{
+        font-size: 30px;
+        line-height:42px;
+    }  
+    .headtext-medium{
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .headtext-e_small{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    /** plaintext */
+    .p-large{
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    /** section padding */
+    .section__padding{
+        padding: 1rem ;
+    }
+
+    /** section margin */
+    .section__margin{
+        margin: 2rem 0.8rem;
+    }
+
+    /** brand-logo */
+    .brand-logo{
+        margin: 0.8rem 0.8rem;
+    }
+    .brand-logo img{
+        width: 70px;
+    } 
+}

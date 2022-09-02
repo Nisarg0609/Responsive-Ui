@@ -1,0 +1,155 @@
+/** cta */
+.app__cta{
+    max-width: 100vw;
+    /* margin: 4rem ; */
+    /* padding: 2rem; */
+    background: var(--gradient-text);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1rem;
+}
+
+
+/** content */
+.app__cta-content p{
+    color: #fff;
+}
+.app__cta-content h3{
+    color: #fff;
+    padding-top: 0.5rem;
+}
+.app__cta-button button{
+    color: #fff;
+    background: #000;
+
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    min-width: 150px;
+}
+
+
+
+/** media queries */
+/** large devices */
+@media screen and (min-width:2500px) {
+    .app__cta{
+        padding: 4rem;
+    }
+    .app__cta-button button{
+        padding: 1rem 2rem;
+        border-radius: 2.5rem;
+    }
+}
+@media screen and (max-width:2500px) {
+    .app__cta{
+        padding: 3.5rem;
+    }
+    .app__cta-button button{
+        padding: 1rem 2rem;
+        border-radius: 2.5rem;
+    }
+}
+
+/** for laptop */
+@media screen and (max-width:1700px) {
+    .app__cta{
+        padding: 3rem;
+    }
+    .app__cta-button button{
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+    }
+}
+@media screen and (max-width:1450px) {
+    .app__cta{
+        padding: 2.5rem;
+    }
+}
+@media screen and (max-width:1300px) {
+    .app__cta{
+        padding: 2rem;
+    }
+    .app__cta-button button{
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+    }
+}
+
+/** for tablet */
+@media screen and (max-width:1150px) {
+    .app__cta{
+        padding: 1.5rem 2rem; 
+    }
+    .app__cta-button button{
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .app__cta{
+        padding: 1.5rem; 
+    }
+}
+@media screen and (max-width:700px) {
+    .app__cta{
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        padding: 1.2rem;
+        margin-bottom: 8rem;
+    }
+    .app__cta-button {
+        position: absolute;
+        top: 7.5rem;
+    }
+    .app__cta-content h3{
+        padding-top: 0;
+    }
+}
+
+/** for mobile */
+/* @media screen and (min-width:450px) and (max-width:530px){
+    .app__cta-button {
+        top: 9rem;
+    }
+} */
+@media screen and (max-width:550px) {
+    .app__cta{
+        padding: 1rem;
+    }
+    .app__cta-button {
+        top: 9rem;
+    }
+    .app__cta-content h3{
+        padding-top: 0.5rem;
+        line-height: 22px;
+    }
+}
+@media screen and (min-width:240px) and (max-width:320px) {
+    .app__cta-button {
+        top: 12rem;
+    }
+}
+@media screen and (max-width:240px) {
+    .app__cta{
+        padding: 0.6rem;
+    }
+    .app__cta-button {
+        top: 9.5rem;
+    }
+    .app__cta-content h3{
+        padding-top: 1rem;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    .app__cta-content p{
+        line-height: 19px;
+    }
+}

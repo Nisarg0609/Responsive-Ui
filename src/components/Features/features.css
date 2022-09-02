@@ -1,0 +1,58 @@
+/** features */
+.app__features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+
+/** header */
+.app__features-header{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+    padding-right: 5rem;
+}
+.app__features-header p{
+    margin-top: 3rem;
+    color: var(--color-subtext);
+}
+
+
+/** all features */
+.app__features-all_features{
+    flex: 1.5;
+}
+.feature{
+    margin: 2.5rem 0;
+}
+
+
+
+/** media queries */
+@media screen and (min-width:1900px){
+    .feature{
+        margin: 4rem 0;
+    }
+}
+
+/** for tablet */
+@media screen and (max-width:1150px) {
+    .app__features{
+        flex-direction: column;
+    }
+    .app__features-header p{
+        margin: 1rem 0;
+    }
+}
+
+/** for mobile */
+@media screen and (max-width:450px) {
+    .app__features-header{
+        padding-right: 0rem;
+        margin-top: 2rem;
+    }
+}

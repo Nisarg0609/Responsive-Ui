@@ -1,0 +1,132 @@
+/** wgpt3 */
+.app__wgpt3{
+    max-width:100% ;
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+}
+
+
+/** content header */
+.app__gtp3-content-header{
+    margin: 4rem 0 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__gtp3-content-header h2{
+    flex : 0.70;
+}
+.app__gtp3-content-header p{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-subtext);
+}
+
+
+/** content group-B */
+.app__wgtp3-content_group-B{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.content-1{
+    flex: 1;
+    margin: 0 1rem;
+}
+.content-2{
+    flex: 1;
+    margin: 0 1rem;
+}
+.content-3{
+    flex: 1;
+    margin: 0 1rem;
+}
+
+
+
+
+/** media queries */
+/** for large screen */
+@media screen and (min-width:2500px) {
+    .content-2{
+        margin: 0 5rem;
+    }
+}
+@media screen and (max-width:2500px) {
+    .content-2{
+        margin: 0 5rem;
+    }
+}
+
+/** for tablet */
+@media screen and (max-width:1150px) {
+    .app__wgtp3-content_group-A{
+        margin-bottom: 4rem;
+    }
+    .app__wgtp3-content_group-B{
+        flex-wrap: wrap;
+    }
+    .content{
+        max-width: 45%;
+    }
+    .content-1{
+       margin-bottom: 5rem;
+    }
+    .content-2{
+        margin: 0 4rem;
+    }
+    .app__gtp3-content-header{
+        align-items: flex-start;
+    }
+    .app__gtp3-content-header h2{
+        flex : 1.4;
+    }
+}
+@media screen and (max-width:850px) {
+    .content-2{
+        margin: 0 3rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .content-2{
+        margin: 0 1.5rem;
+    }
+    .content-2{
+        margin: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    .app__wgtp3-content_group-B{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content{
+        margin: 1rem 0;
+        max-width: 60%;
+    }
+    .app__gtp3-content-header{
+        flex-direction: column;
+        text-align: start;
+        margin-bottom: 2.5rem;
+    }
+    .app__gtp3-content-header h2{
+        flex: 1;
+        margin-bottom: 0.5rem;
+    }
+    .app__wgtp3-content_group-A{
+        margin-bottom: -1rem;
+    }
+}
+
+/** for mobile */
+@media screen and (max-width:450px) {
+    .content{
+        max-width: 100%;
+    }
+    .app__gtp3-content-header{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
