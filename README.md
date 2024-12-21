@@ -1,6 +1,6 @@
 # 📱 **Responsive UI**  
 
-A fully responsive static web page built with React JSX and CSS, ensuring seamless adaptability from small mobile devices to large desktop screens.  
+A fully responsive static web page built with React JSX and CSS media queries, ensuring seamless adaptability from small mobile devices to large desktop screens.  
 
 ## Live Demo
 You can view the live demo of this project here: [Live Demo](https://gpt-3-f96b6.web.app) 
